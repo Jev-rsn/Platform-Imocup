@@ -6,10 +6,10 @@
 // =========================================================================
 
 export const API_CONFIG = {
-  // Supabase Cloud Backend Resmi (Diambil dari .env)
-  SUPABASE_URL: import.meta.env.VITE_SUPABASE_URL || '',
-  SUPABASE_ANON_KEY: import.meta.env.VITE_SUPABASE_ANON_KEY || '',
-  SUPABASE_PROJECT_ID: import.meta.env.VITE_SUPABASE_PROJECT_ID || '',
+  // Supabase Cloud Backend Resmi
+  SUPABASE_URL: import.meta.env.VITE_SUPABASE_URL || 'https://qveefvfkcxtjuyxpfguv.supabase.co',
+  SUPABASE_ANON_KEY: import.meta.env.VITE_SUPABASE_ANON_KEY || 'sb_publishable_9G_HDhKeuexULpyR6wTpag_IHbLfEQm',
+  SUPABASE_PROJECT_ID: import.meta.env.VITE_SUPABASE_PROJECT_ID || 'qveefvfkcxtjuyxpfguv',
   SUPABASE_SERVICE_ROLE_KEY: import.meta.env.SUPABASE_SERVICE_ROLE_KEY || '',
 } as const;
 
