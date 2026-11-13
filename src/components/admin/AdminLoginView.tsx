@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Lock, Eye, EyeOff, ArrowLeft, AlertCircle, KeyRound, Shield } from 'lucide-react';
 import { verifyAdminLogin, setAdminSession } from '../../config/adminAccounts';
-import { EVENT_CONFIG } from '../../config/eventConfig';
+import { EVENT_CONFIG, APP_ASSETS } from '../../config/eventConfig';
 
 interface AdminLoginViewProps {
   onLoginSuccess: () => void;
@@ -35,7 +35,7 @@ export const AdminLoginView: React.FC<AdminLoginViewProps> = ({ onLoginSuccess, 
       {/* Top Header Bar */}
       <header className="px-6 py-4 flex items-center justify-between border-b border-white/10 bg-zinc-950/80 backdrop-blur-md">
         <div className="flex items-center gap-2.5">
-          <img src="/Logo_IMOCUP.png" alt="IMOCUP Logo" className="w-8 h-8 object-contain" />
+          <img src={APP_ASSETS.LOGO_IMOCUP} alt="IMOCUP Logo" className="w-8 h-8 object-contain" />
           <span className="font-display font-black text-sm text-white uppercase tracking-wider">
             {EVENT_CONFIG.NAME}
           </span>

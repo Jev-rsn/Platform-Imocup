@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { APP_ASSETS } from '../../config/eventConfig';
 import { useTournament } from '../../context/TournamentContext';
 import { useCustomerAuth } from '../../context/CustomerAuthContext';
 import { 
@@ -64,12 +65,12 @@ export const Header: React.FC<HeaderProps> = ({ currentTab, setCurrentTab, onEnt
           >
             <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
               <img 
-                src="/Logo_IMOCUP.png" 
+                src={APP_ASSETS.LOGO_IMOCUP} 
                 alt="IMOCUP Logo" 
                 className="w-8 h-8 sm:w-10 sm:h-10 object-contain shrink-0" 
               />
               <img 
-                src="/Logo_Um.png" 
+                src={APP_ASSETS.LOGO_UM} 
                 alt="Universitas Negeri Malang" 
                 className="w-8 h-8 sm:w-10 sm:h-10 object-contain shrink-0" 
               />

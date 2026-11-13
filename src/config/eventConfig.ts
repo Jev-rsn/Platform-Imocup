@@ -56,6 +56,24 @@ export const CONTACT_CONFIG = {
   ACCOUNT_NAME: PAYMENT_CREDENTIALS.ACCOUNT_NAME
 };
 
+// Helper URL Asset Statis yang kompatibel dengan Localhost & GitHub Pages Subpath
+export const getAssetUrl = (fileName: string): string => {
+  const clean = fileName.replace(/^\/+/, '');
+  const base = import.meta.env.BASE_URL || './';
+  return base.endsWith('/') ? `${base}${clean}` : `${base}/${clean}`;
+};
+
+export const APP_ASSETS = {
+  LOGO_IMOCUP: getAssetUrl('Logo_IMOCUP.png'),
+  LOGO_UM: getAssetUrl('Logo_Um.png'),
+  LOGO_IMONOKE: getAssetUrl('Logo_Imonoke.jpeg'),
+  QRIS_OFFICIAL: getAssetUrl('qris-official.jpg'),
+  BACKGROUND: getAssetUrl('background.jpg'),
+  FRAME_SCORE: getAssetUrl('frame_score.png'),
+  FRAME_FOUL: getAssetUrl('frame_foul.png'),
+  SHIELD: getAssetUrl('shield.svg'),
+};
+
 // Helper URL WhatsApp Konfirmasi Tiket
 export const getTicketVerificationWhatsAppUrl = (purchase: {
   id: string;

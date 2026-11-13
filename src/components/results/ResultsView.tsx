@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { getAssetUrl } from '../../config/eventConfig';
 import { useTournament } from '../../context/TournamentContext';
 import { TournamentCategory, Match } from '../../types/tournament';
 import { MatchDetailModal } from './MatchDetailModal';
@@ -17,9 +18,9 @@ export const ResultsView: React.FC = () => {
 
   // Map category to the uploaded official image
   const officialBracketImages: Record<TournamentCategory, string> = {
-    'SMA Putri': '/1.png',
-    'SMA Putra': '/2.png',
-    'Umum': '/3.png'
+    'SMA Putri': getAssetUrl('1.png'),
+    'SMA Putra': getAssetUrl('2.png'),
+    'Umum': getAssetUrl('3.png')
   };
 
   // Finished matches in selected category

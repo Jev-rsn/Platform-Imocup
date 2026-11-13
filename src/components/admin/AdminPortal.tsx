@@ -19,7 +19,7 @@ import {
   RotateCw
 } from 'lucide-react';
 import { useCustomerAuth } from '../../context/CustomerAuthContext';
-import { getApprovalNoticeWhatsAppUrl } from '../../config/eventConfig';
+import { getApprovalNoticeWhatsAppUrl, APP_ASSETS } from '../../config/eventConfig';
 import { Match } from '../../types/tournament';
 
 interface AdminPortalProps {
@@ -131,8 +131,8 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({ onExitAdmin, onLogout 
             {/* Admin Title */}
             <div className="flex items-center gap-3">
               <div className="flex items-center gap-2">
-                <img src="/Logo_IMOCUP.png" alt="IMOCUP Logo" className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0" />
-                <img src="/Logo_Um.png" alt="UM Logo" className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0" />
+                <img src={APP_ASSETS.LOGO_IMOCUP} alt="IMOCUP Logo" className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0" />
+                <img src={APP_ASSETS.LOGO_UM} alt="UM Logo" className="w-9 h-9 sm:w-10 sm:h-10 object-contain shrink-0" />
               </div>
               <div>
                 <div className="flex items-center gap-2">

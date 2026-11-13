@@ -11,7 +11,7 @@ export const PAYMENT_CREDENTIALS = {
   // Rekening Bank / QRIS Panitia Resmi (IMOCUP 26, Makanan)
   QRIS_MERCHANT_NAME: import.meta.env.VITE_QRIS_MERCHANT_NAME || 'IMOCUP 26, Makanan',
   QRIS_NMID: import.meta.env.VITE_QRIS_NMID || 'ID1026490042029',
-  QRIS_IMAGE_URL: import.meta.env.VITE_QRIS_IMAGE_URL || '/qris-official.jpg',
+  QRIS_IMAGE_URL: import.meta.env.VITE_QRIS_IMAGE_URL || (import.meta.env.BASE_URL ? `${import.meta.env.BASE_URL}qris-official.jpg` : './qris-official.jpg'),
   BANK_NAME: import.meta.env.VITE_PAYMENT_BANK_NAME || 'BCA',
   ACCOUNT_NUMBER: import.meta.env.VITE_PAYMENT_ACCOUNT_NUMBER || '1234567890',
   ACCOUNT_NAME: import.meta.env.VITE_PAYMENT_ACCOUNT_NAME || 'IMONOKE CUP PANITIA'

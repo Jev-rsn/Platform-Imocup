@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, MapPin, QrCode, PhoneCall, Lock } from 'lucide-react';
-import { EVENT_CONFIG, VENUE_CONFIG, CONTACT_CONFIG, SCHEDULE_CONFIG } from '../../config/eventConfig';
+import { EVENT_CONFIG, VENUE_CONFIG, CONTACT_CONFIG, SCHEDULE_CONFIG, APP_ASSETS } from '../../config/eventConfig';
 
 interface FooterProps {
   onNavigate: (tab: string) => void;
@@ -16,9 +16,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onEnterAdmin }) => {
           {/* Brand Column with Logos Trio */}
           <div className="md:col-span-2 space-y-3.5">
             <div className="flex items-center gap-3">
-              <img src="/Logo_IMOCUP.png" alt="IMOCUP Logo" className="w-10 h-10 object-contain shrink-0" />
-              <img src="/Logo_Um.png" alt="UM Logo" className="w-10 h-10 object-contain shrink-0" />
-              <img src="/Logo_Imonoke.jpeg" alt="Imonoke" className="w-10 h-10 object-contain rounded-full border border-white/10 shrink-0" />
+              <img src={APP_ASSETS.LOGO_IMOCUP} alt="IMOCUP Logo" className="w-10 h-10 object-contain shrink-0" />
+              <img src={APP_ASSETS.LOGO_UM} alt="UM Logo" className="w-10 h-10 object-contain shrink-0" />
+              <img src={APP_ASSETS.LOGO_IMONOKE} alt="Imonoke" className="w-10 h-10 object-contain rounded-full border border-white/10 shrink-0" />
               <div>
                 <span className="font-display font-black text-lg text-white tracking-wider">
                   IMONOKE <span className="text-amber-400">CUP</span>

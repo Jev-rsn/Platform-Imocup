@@ -1,4 +1,5 @@
 import React from 'react';
+import { APP_ASSETS } from '../../config/eventConfig';
 import { useTournament } from '../../context/TournamentContext';
 import { Calendar, Trophy, Ticket, ArrowRight, ShieldCheck, Clock, Zap } from 'lucide-react';
 
@@ -16,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
       {/* Subtle athletic texture background */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-15 grayscale pointer-events-none"
-        style={{ backgroundImage: `url('/background.jpg')` }}
+        style={{ backgroundImage: `url('${APP_ASSETS.BACKGROUND}')` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/70 via-zinc-950/90 to-zinc-950 pointer-events-none" />
 
@@ -48,8 +49,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
             <span className="text-amber-300 font-bold">GKB FIP UM</span>
             <span className="text-zinc-600">&bull;</span>
             <div className="flex items-center gap-1.5">
-              <img src="/Logo_IMOCUP.png" alt="IMOCUP" className="w-4 h-4 object-contain" />
-              <img src="/Logo_Um.png" alt="UM" className="w-4 h-4 object-contain" />
+              <img src={APP_ASSETS.LOGO_IMOCUP} alt="IMOCUP" className="w-4 h-4 object-contain" />
+              <img src={APP_ASSETS.LOGO_UM} alt="UM" className="w-4 h-4 object-contain" />
             </div>
             <span className="text-zinc-200 font-medium hidden sm:inline">Universitas Negeri Malang</span>
           </div>
