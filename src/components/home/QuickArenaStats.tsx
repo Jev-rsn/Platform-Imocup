@@ -131,7 +131,7 @@ export const QuickArenaStats: React.FC<QuickArenaStatsProps> = ({ onNavigate }) 
               Tiket Masuk Colosseum 3x3
             </h3>
             <p className="text-xs sm:text-sm text-zinc-400 max-w-xl leading-relaxed">
-              Dukung tim sekolah & komunitas favoritmu langsung di GKB FIP Universitas Negeri Malang (UM). 1 tiket untuk 1 hari: Tiket Day 1 (Sabtu, 14 Nov) Rp 25.000 & Tiket Day 2 (Minggu, 15 Nov) Rp 25.000.
+              Dukung tim sekolah & komunitas favoritmu langsung di GKB FIP Universitas Negeri Malang (UM). 1 tiket untuk 1 hari: Tiket Day 1 (Sabtu, 14 Nov) Rp 15.000 & Tiket Day 2 (Minggu, 15 Nov) Rp 25.000.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-1 text-xs text-zinc-400">

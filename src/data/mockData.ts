@@ -333,7 +333,7 @@ export const INITIAL_TICKETS: TicketTier[] = [
     id: 't-day1',
     name: 'Tiket Day 1 (Sabtu, 14 Nov 2026)',
     tagline: '1 Tiket untuk 1 Hari: Babak Penyisihan & 16 Besar',
-    price: 25000,
+    price: 15000,
     totalQuota: 100,
     remainingQuota: 99,
     color: 'bronze',

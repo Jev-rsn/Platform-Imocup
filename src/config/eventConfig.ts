@@ -35,7 +35,7 @@ export const SCHEDULE_CONFIG = {
     DATE: '2026-11-14',
     LABEL: 'Day 1 &bull; Sabtu, 14 Nov 2026',
     ROUNDS: 'Babak 32 Besar & 16 Besar',
-    TICKET_PRICE: 25000
+    TICKET_PRICE: 15000
   },
   DAY_2: {
     DATE: '2026-11-15',
@@ -123,11 +123,11 @@ export const STORAGE_KEYS = {
   CUSTOMER_SESSION: 'imonoke_customer_session',
   SUPABASE_URL: 'imonoke_supabase_url',
   SUPABASE_KEY: 'imonoke_supabase_key',
-  MATCHES_CACHE: 'imonoke_matches_v12',
-  BRACKETS_CACHE: 'imonoke_brackets_v12',
-  TICKETS_CACHE: 'imonoke_tickets_v12',
-  PURCHASES_CACHE: 'imonoke_purchases_v12',
-  LOGS_CACHE: 'imonoke_logs_v12'
+  MATCHES_CACHE: 'imonoke_matches_v13',
+  BRACKETS_CACHE: 'imonoke_brackets_v13',
+  TICKETS_CACHE: 'imonoke_tickets_v13',
+  PURCHASES_CACHE: 'imonoke_purchases_v13',
+  LOGS_CACHE: 'imonoke_logs_v13'
 };
 
 // 7. Supabase Table Names
